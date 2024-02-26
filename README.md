@@ -7,11 +7,13 @@ Microservice to send emails to newly registered users.
    c. create a name for your app and paste the password into emailsend.py password field
 
 2. If using Python for app:
+   
    a. You must add "import subprocess" to your app
    b. you must also add a line to call the subprocess in the route for registering new users (shown in video)
    c. the line should look like subprocess.run(["python", "emailsend.py", emailGoesHere])
 
 3. If using Node.JS:
+   
    a. You must add these lines to your main app script:
    
     const { spawn } = require('child_process');
