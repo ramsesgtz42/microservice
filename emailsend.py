@@ -4,8 +4,9 @@ from email.mime.multipart import MIMEMultipart
 import sys
 
 if len(sys.argv) < 1:
-    print("No recipient email received.")
-    exit
+    with open("confirm.txt", "w") as w:
+        w.write("No email received.")
+        exit
 
 # Email configuration
 smtp_server = 'smtp.gmail.com' # use this if using gmail
