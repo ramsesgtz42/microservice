@@ -31,4 +31,5 @@ with smtplib.SMTP(smtp_server, smtp_port) as server:
     # Send the email
     server.send_message(message)
 
-print('Email sent successfully') # change or remove this how you like
+with open("confirm.txt", "w") as w:
+    w.write("Email sent Successfully.")
