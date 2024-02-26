@@ -17,6 +17,8 @@ Microservice to send emails to newly registered users.
    
    c. the line should look like subprocess.run(["python", "emailsend.py", emailGoesHere])
 
+   d. After sending the email, the microservice will write a confirmation message to "confirm.txt", you must add a line to your app that reads the confirm message from confirm.txt
+
 3. If using Node.JS:
    
    a. You must add these lines to your main app script:
@@ -32,6 +34,8 @@ Microservice to send emails to newly registered users.
     const pythonProcess = spawn(pythonCommand, [pythonScript, argument]);
 
    b. It doesn't have to be that specific as you can change variable names to your liking, but the way emailsend.py works is that it receives an argument when called and sends email to that argument.
+
+   c. After sending the email, the microservice will write a confirm message to "confirm.txt". If you want a confirmation message you must add a line that reads from confirm.txt
 
 4. After adding the lines, make sure to go into emailsend.py and configure the email sending fields to your liking
    
