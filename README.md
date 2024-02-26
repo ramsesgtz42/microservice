@@ -40,3 +40,7 @@ Microservice to send emails to newly registered users.
 4. After adding the lines, make sure to go into emailsend.py and configure the email sending fields to your liking
    
 5. Also, configure the email subject and body within emailsend.py to your liking.
+
+
+![firefox_dBynaH2YzT](https://github.com/ramsesgtz42/microservice/assets/101148268/f5f7d782-68f9-45d2-a71f-e69dc05063c5)
+
